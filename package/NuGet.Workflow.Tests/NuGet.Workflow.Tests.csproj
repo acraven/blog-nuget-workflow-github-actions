@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.12.0"/>
-    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0"/>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3"/>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NuGet.Workflow\NuGet.Workflow.csproj"/>
+    <ProjectReference Include="..\NuGet.Workflow\NuGet.Workflow.csproj" />
   </ItemGroup>
 </Project>
