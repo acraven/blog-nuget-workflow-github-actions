@@ -1,23 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{9BFADDE2-4D7E-4B23-A442-0221F8C04E7A}"
-ProjectSection(SolutionItems) = preProject
-	package\NuGet.config = package\NuGet.config
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		package\NuGet.config = package\NuGet.config
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Workflow", "package\NuGet.Workflow\NuGet.Workflow.csproj", "{8C6E2ECC-DDD0-41BE-995D-0E444DD5A84F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGet.Workflow", "package\NuGet.Workflow\NuGet.Workflow.csproj", "{8C6E2ECC-DDD0-41BE-995D-0E444DD5A84F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Workflow.Tests", "package\NuGet.Workflow.Tests\NuGet.Workflow.Tests.csproj", "{47E7EF2F-A1FB-4C54-B2BA-3177F67970D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGet.Workflow.Tests", "package\NuGet.Workflow.Tests\NuGet.Workflow.Tests.csproj", "{47E7EF2F-A1FB-4C54-B2BA-3177F67970D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{935C2502-876A-4624-B5D5-C0D4ED20A4FC}"
-ProjectSection(SolutionItems) = preProject
-	.editorconfig = .editorconfig
-	.gitignore = .gitignore
-	build.ps1 = build.ps1
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		build.ps1 = build.ps1
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\release-preview.yml = .github\workflows\release-preview.yml
+		.github\workflows\release.yml = .github\workflows\release.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +30,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8C6E2ECC-DDD0-41BE-995D-0E444DD5A84F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -56,6 +56,9 @@ Global
 		{47E7EF2F-A1FB-4C54-B2BA-3177F67970D6}.Release|x64.Build.0 = Release|Any CPU
 		{47E7EF2F-A1FB-4C54-B2BA-3177F67970D6}.Release|x86.ActiveCfg = Release|Any CPU
 		{47E7EF2F-A1FB-4C54-B2BA-3177F67970D6}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8C6E2ECC-DDD0-41BE-995D-0E444DD5A84F} = {9BFADDE2-4D7E-4B23-A442-0221F8C04E7A}
