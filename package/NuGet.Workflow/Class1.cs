@@ -6,6 +6,7 @@ namespace NuGet.Workflow
       /// Value
       ///
       /// Added comment for GitHub Test!!!
+      /// More comments as Actions were disabled on fork.
       /// </summary>
       public string Value { get; set; } = "Foo";
    }
